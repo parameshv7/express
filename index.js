@@ -1,12 +1,20 @@
 
+
+import bodyParser from "body-parser";
+import cors from "cors";
 import todo from "./routes/todor.js"
 const express = require("express");
 
 
 const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 app.use("/", todo);
+
+
+
 app.get("/", (req, res) => {
-  res.send("sswwwww on Vercel");
+  res.send("sscxxxwwwww on Vercel");
 });
 
 app.listen(9000, () => {
