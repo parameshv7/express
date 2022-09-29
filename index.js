@@ -1,10 +1,12 @@
+
+import todo from "./routes/todor.js"
 const express = require("express");
 
 
 const app = express();
-
+app.use("/", todo);
 app.get("/", (req, res) => {
-  res.send("ss on Vercel");
+  res.send("sswwwww on Vercel");
 });
 
 app.listen(9000, () => {
