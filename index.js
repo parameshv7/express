@@ -12,3 +12,4 @@ app.listen(9000, () => {
 });
 
 // Export the Express API
+module.exports = app;
