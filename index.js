@@ -25,16 +25,23 @@
 // export default app;
 
 
-const express = require("express");
+//const express = require("express");
+
+
+import bodyParser from "body-parser";
+import cors from "cors";
+import express from "express";
 
 const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("AaaaaaaaaaPppppppIiiiiS");
+  res.send("PS1");
 });
 
-app.listen(5000, () => {
-  console.log("Running on port 5000.");
+app.listen(7000, () => {
+  console.log("Running on port 7000.");
 });
 
 // Export the Express API
