@@ -28,12 +28,12 @@
 //const express = require("express");
 
 
-
+import todo from "./routes/todor.js"
 import express from "express";
 
 const app = express();
 
-
+app.use("/", todo);
 app.get("/", (req, res) => {
   res.send("ponniyin selvan");
 });
